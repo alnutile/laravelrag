@@ -7,7 +7,10 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/pennant": "^1.8",
+        "laravel/tinker": "^2.9",
+        "pgvector/pgvector": "^0.1.4",
+        "spatie/laravel-data": "^4.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -22,12 +25,18 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": [
