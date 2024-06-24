@@ -7,8 +7,10 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.9",
+        "laravel/pennant": "^1.8",
         "laravel/tinker": "^2.9",
-        "pgvector/pgvector": "^0.1.4"
+        "pgvector/pgvector": "^0.1.4",
+        "spatie/laravel-data": "^4.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

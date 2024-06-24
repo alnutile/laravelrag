@@ -12,6 +12,8 @@ class Chunk extends Model
     use HasFactory;
     use HasNeighbors;
 
+    protected $guarded = [];
+
     protected $casts = [
         'embedding_3072' => Vector::class,
         'embedding_1536' => Vector::class,
