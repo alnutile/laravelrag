@@ -2,6 +2,7 @@
 
 namespace App\Services\LlmServices;
 
+
 class LlmDriverClient
 {
     protected $drivers = [];
@@ -28,6 +29,8 @@ class LlmDriverClient
                 return new OpenAiClient();
             case 'ollama':
                 return new OllamaClient();
+            case 'claude':
+                return new ClaudeClient();
             case 'mock':
                 return new MockClient();
             default:

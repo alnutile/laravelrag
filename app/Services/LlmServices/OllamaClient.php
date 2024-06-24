@@ -178,7 +178,7 @@ class OllamaClient extends BaseClient
 
     }
 
-    public function embedData(string $prompt): \App\Services\LlmServices\Responses\EmbeddingsResponseDto
+    public function embedData(string $prompt): EmbeddingsResponseDto
     {
         Log::info('LlmDriver::Ollama::embedData');
 
